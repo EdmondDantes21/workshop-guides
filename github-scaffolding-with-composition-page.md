@@ -101,6 +101,16 @@ Access the fireworksapp at `localhost:30086`.
 
 # Method 3 - Composable Portal
 
+Delete the composition and compositiondefinition created earlier:
+
+```sh
+kubectl delete GithubScaffoldingWithCompositionPage my-fireworks-app -n krateo-system
+```
+
+```sh
+kubectl delete CompositionDefinition github-scaffolding -n krateo-system
+```
+
 Create a `compositionDefinition` for the `portal-blueprint-page` blueprint:
 
 ```sh
